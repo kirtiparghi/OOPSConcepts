@@ -1,5 +1,5 @@
 # OOPSConcepts
-This repository contains different programs which demonstrate object oriented fundamentals listed below:
+This repository contains different programs in JAVA language which demonstrate object oriented fundamentals listed below:
 > Class
 > Objects
 > Inheritance
