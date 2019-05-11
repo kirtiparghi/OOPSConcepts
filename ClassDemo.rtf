@@ -3,6 +3,7 @@ The class is a group of similar entities. It is only an logical component and no
 For example, if you had a class called “Expensive Cars” it could have objects like Mercedes, BMW, Toyota, etc. 
 Its properties(data) can be price or speed of these cars. While the methods may be performed with these cars are driving, reverse, braking etc.
 */
+// This program contains demo of class and object....
 class Car {
     //attributes or properties
     String model;
@@ -29,11 +30,11 @@ class Car {
 
 public class MyProgram {
     public static void main(String[] args) {
-        Car bmw = new Car("BMW", 4, "red", 5);
-        Car ferrari = new Car("Ferrari", 2, "black", 10);
-        Car ford = new Car("Ford", 6, "blue", 6);
+        Car bmw = new Car("BMW", 4, "red", 5); // bmw is an object of class Car
+        Car ferrari = new Car("Ferrari", 2, "black", 10); // ferrari is an object of class Car
+        Car ford = new Car("Ford", 6, "blue", 6); // ford is an object of class Car
 
-        bmw.accelerate();
+        bmw.accelerate(); //calling method using object
         System.out.println(bmw.color);
 
         ferrari.accelerate();
