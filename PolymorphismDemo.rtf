@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /*\
+Polymorphism refers to the ability of a variable, object or function to take on multiple forms. \
+For example, in English, the verb run has a different meaning if you use it with a laptop, a foot race, and business. \
+Here, we understand the meaning of run based on the other words used along with it.The same also applied to Polymorphism.\
+*/\
+// TWO TYPES OF POLIMORPHISM\
+// 1. COMPILE TIME (achieve using method overloading)\
+// 2. RUN TIME (achieve using method overriding)\
+// BELOW IS AN EXAMPLE OF RUN TIME POLYMORPHISM\
+class Animal\{\
+   public void sound()\{\
+      System.out.println("Animal is making a sound");   \
+   \}\
+\}\
+public class Horse extends Animal\{\
+    @Override\
+    public void sound()\{\
+        System.out.println("Neigh");\
+    \}\
+    public static void main(String args[])\{\
+    	Animal obj = new Horse(); // parent class object pointing to sub class\
+    	obj.sound(); // subclass method will be called rather than parent class because object is poiting to subclass\
+    \}\
+\}}

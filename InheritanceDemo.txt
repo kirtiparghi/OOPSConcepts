@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /*\
+Inheritance is an OOPS concept in which one object acquires the properties and behaviors of the parent object. \
+It\'92s creating a parent-child relationship between two classes. It offers robust and natural mechanism for organizing and structure of any software.\
+*/\
+class Teacher \{\
+   String designation = "Teacher";\
+   String collegeName = "GLS";\
+   void does()\{\
+	System.out.println("Teaching");\
+   \}\
+\}\
+\
+public class PhysicsTeacher extends Teacher \{\
+   \
+   String mainSubject = "Physics";\
+   \
+   public static void main(String args[]) \{\
+	PhysicsTeacher obj = new PhysicsTeacher();\
+	System.out.println(obj.collegeName);\
+	System.out.println(obj.designation);\
+	System.out.println(obj.mainSubject);\
+	obj.does();\
+   \}\
+\}}
