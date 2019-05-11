@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww12660\viewh9960\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /*\
+The class is a group of similar entities. It is only an logical component and not the physical entity. \
+For example, if you had a class called \'93Expensive Cars\'94 it could have objects like Mercedes, BMW, Toyota, etc. \
+Its properties(data) can be price or speed of these cars. While the methods may be performed with these cars are driving, reverse, braking etc.\
+*/\
+class Car \{\
+    //attributes or properties\
+    String model;\
+    int passengers;\
+    String color;\
+    float speed;\
+    \
+    //parameterized constructors\
+    public Car(String model, int passengers, String color, float speed) \{ \
+        this.model = model;\
+        this.passengers = passengers;\
+        this.color = color;\
+        this.speed = speed;\
+    \}\
+    \
+    //methods\
+    void accelerate() \{\
+        this.speed = this.speed + 2;\
+    \}\
+    \
+    //you can defined class variables, class methods by using static keyword.\
+    //you can define deconstructor as well based on your requirement.\
+\}\
+\
+public class MyProgram \{\
+    public static void main(String[] args) \{\
+        Car bmw = new Car("BMW", 4, "red", 5);\
+        Car ferrari = new Car("Ferrari", 2, "black", 10);\
+        Car ford = new Car("Ford", 6, "blue", 6);\
+\
+        bmw.accelerate();\
+        System.out.println(bmw.color);\
+\
+        ferrari.accelerate();\
+        System.out.println(ferrari.color);\
+        ferrari.accelerate(); //note that the speed has been updated from the previous accelerate call\
+\
+        System.out.println(ford.passengers);\
+        ford.accelerate();\
+    \}\
+\}}
